@@ -1,26 +1,27 @@
 {
   "name": "botvs-typescript-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "botvs typescript 开发模板工程",
   "main": "index.js",
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp",
+    "reset": "rm -rf dist node_modules .rpt2_cache && yarn && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Huang Qi (pinqy520)",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "rollup": "^0.43.0",
+    "rollup": "^0.45.2",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-typescript2": "^0.4.6",
     "rollup-plugin-uglify": "^2.0.1",
-    "typescript": "^2.4.1"
+    "typescript": "^2.4.2"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.68",
-    "@types/node": "^8.0.6"
+    "@types/lodash": "^4.14.71",
+    "@types/node": "^8.0.15"
   }
 }
